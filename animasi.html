@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title>Remed Animasi</title>
+  <script language='JavaScript' type='text/JavaScript'>
+  
+function Down(){
+  var step = 50;
+  var x = document.getElementById('gambar').offsetTop;
+  x = x + step;
+  document.getElementById('gambar').style.top= x + "px";
+}
+function Up(){
+  var step = 50;
+  var x = document.getElementById('gambar').offsetTop;
+  x = x - step;
+  document.getElementById('gambar').style.top= x + "px";
+}
+function Left(){
+  var step = 50;
+  var y = document.getElementById('gambar').offsetLeft;
+  y = y - step;
+  document.getElementById('gambar').style.left= y + "px";
+}
+function Right() {
+  var step = 50;
+  var y = document.getElementById('gambar').offsetLeft;
+  y = y + step;
+  document.getElementById('gambar').style.left= y + "px"; 
+}
+</script>
+</head>
+
+<body>
+  <img src=images/bagus.jpg id='gambar' height="100px" style="position:absolute; left: 500; top: 100;">
+  <input type=button onClick=Up() value='up'>
+  <input type=button onClick=Left() value='left'>
+  <input type=button onClick=Right() value='right'>
+  <input type=button onClick=Down() value='down'>
+</body>
+
+</html>
